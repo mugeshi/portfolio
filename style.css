@@ -1,14 +1,14 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background: #080808;
+    font-family: 'Poppins', sans-serif;
+    background-color: #080808;
     color: #fff;
-    overflow: hidden; /* Prevent horizontal scroll */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 #header {
@@ -18,13 +18,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Adjust padding for better spacing */
-    z-index: 1000; /* Set a high z-index to ensure it's above other content */
-}
-
-#header img {
-    max-width: 80px; /* Adjust the width of the logo */
-    height: auto;
+    padding: 10px 20px;
+    z-index: 1000;
 }
 
 .container {
@@ -37,14 +32,10 @@ nav {
     align-items: center;
 }
 
-.logo {
-    width: 80px; /* Adjust the width of the logo */
-    margin-right: 20px; /* Add margin to separate logo from navigation */
-}
-
 nav ul {
     list-style: none;
     display: flex;
+    margin-left: auto;
 }
 
 nav ul li {
@@ -60,10 +51,21 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Change the color on hover */
+    color: #ffcc00;
 }
 
-/* Add some padding to the body to avoid content being hidden behind the fixed header */
-body {
-    padding-top: 70px; /* Adjust as needed based on the height of your fixed header */
+.logo {
+    width: 80px;
+    margin-right: 20px;
 }
+
+body {
+    padding-top: 70px;
+}
+
+#header img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add additional styling for your content sections below */
