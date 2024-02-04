@@ -238,7 +238,52 @@ margin-bottom: 20px;
 
 
 /*-------------portfolio---------------*/
-
-#portfolio{
-    padding: 50px 0;
+#portfolio {
+    background-color: #080808;
+    padding: 40px 0;
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.work-list {
+    display: flex; /* Use flex container to align items in a row */
+    justify-content: space-around; /* Distribute space around items */
+    gap: 20px;
+}
+
+.work {
+    flex: 1; /* Adjusted width for each work item to take equal space */
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #262626; /* Background color for the card */
+    padding: 15px;
+}
+
+.work img {
+    width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjusted maximum height for the image */
+    border-radius: 10px; /* Slightly rounded corners for the image */
+    transition: transform 0.3s ease-in-out;
+}
+
+.work:hover {
+    transform: scale(1.05);
+}
+
+.work img:hover {
+    transform: scale(1.1);
+}
+
