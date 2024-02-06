@@ -342,23 +342,26 @@ margin-bottom: 20px;
 }
 
 /*--------------------Contact-----------------*/
-.contact-left{
+.contact-left {
     flex-basis: 35%;
+    order: 1; /* Set the order to 1 for the left side */
+}
 
-}
-.contact-left{
+.contact-right {
     flex-basis: 60%;
-    
+    order: 2; /* Set the order to 2 for the right side */
 }
-.contact-left p{
+
+.contact-left p {
     margin-top: 30px;
 }
-.contact-left p i{
+
+.contact-left p i {
     color: #ff004f;
     margin-right: 15px;
-    font-size: 25px;
-
+    font-size: 35px;
 }
+
 .social-icon {
     margin-top: 30px;
 }
@@ -376,7 +379,25 @@ margin-bottom: 20px;
     color: #ff004f;
     transform: translate(-5px);
 }
-.btn.btn2{
+
+.btn.btn2 {
     display: inline-block;
     background: #ff004f;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input,
+textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
 }
