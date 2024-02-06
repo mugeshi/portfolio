@@ -340,3 +340,17 @@ margin-bottom: 20px;
     background: #ff004f;
     
 }
+
+/*--------------------Contact-----------------*/
+.contact-left{
+    flex-basis: 35%;
+
+}
+.contact-left{
+    flex-basis: 60%;
+    
+}
+.contact-left p{
+    margin-top: 30px;
+}
+
