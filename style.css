@@ -423,3 +423,21 @@ textarea {
     color: #ff004f;
 
 }
+
+
+/* Mobile Styles */
+nav .fa {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-image: url('images/image1.jpeg'); 
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .header-text {
+        font-size: 20px !important; /*  !important to ensure the style is applied */
+    }
+}
