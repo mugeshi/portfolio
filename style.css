@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -20,6 +23,7 @@ header {
    
 }
 
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -33,9 +37,12 @@ header {
     color: #fff;
 }
 
+
 nav ul {
     list-style: none;
     display: flex;
+   
+
 }
 
 nav ul li {
@@ -424,20 +431,21 @@ textarea {
 
 }
 
-
-/* Mobile Styles */
-nav .fa {
+nav .fas{
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
-    header {
-        background-image: url('images/image1.jpeg'); 
-        background-size: cover;
-        background-position: center;
-    }
+@media only screen and (max-width: 768px) {
     
     .header-text {
-        font-size: 20px !important; /*  !important to ensure the style is applied */
-    }
+    margin-top: 20%;
+    font-size: 15px;
+    animation: swim 2s ease-in-out infinite alternate, fadeIn 1.5s ease-out forwards;
+}
+header{
+    background-image: url(images/image1.jpeg);
+    
+}
+
+
 }
