@@ -493,4 +493,40 @@ nav .fas{
         opacity: 1;
     }
 }
+
+.city {
+    height: 250px; /* Fix typo '250ox' to '250px' */
+    width: 500%;
+    background-image: url(images/city.png);
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite; /* Fix animation property */
+}
+
+@keyframes city {
+    100% {
+        transform: translateX(-1400px); /* Fix typo 'PX' to 'px' */
+    }
+}
+
+
+.car{
+    width: 400px;
+    left: 20%;
+    bottom: 10px;
+    transform: translateX();
+    position: absolute;
+    z-index: 2;
+
+}
+.car img{
+    width: 100%;
+}
+
+
 }
