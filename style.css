@@ -434,7 +434,6 @@ textarea {
 nav .fas{
     display: none;
 }
-
 @media only screen and (max-width: 768px) {
    
 
@@ -442,45 +441,56 @@ nav .fas{
         background-image: url(images/sky2.jpg);
         background-size: cover;
         background-position: center;
-        height: 600px;
-        width: 100%;;
+        height: 600px; /* Adjust the height as needed */
+        width: 100%;
         position: relative; /* Ensure relative positioning for the hero */
         overflow: hidden;
     }
+    
 
     .header-text h1 {
         font-size: 30px;
     }
 
 
-    .highway {
-        height: 100px; /* Adjust the height as needed */
-        width: 620px; /* Adjust the width as needed */
-        display: block;
-        background-image: url(images/road.jpg);
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-        margin: auto; /* Center the highway horizontally */
-        z-index: 1;
-    }
+.highway {
+    height: 100px; /* Adjust the height as needed */
+    width: 1000%; /* Set a large value or use a percentage for an "infinite" width */
+    display: block;
+    background-image: url(images/road.jpg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite; /* Keyframe animation for highway movement */
+}
 
-    @keyframes swim {
-        from {
-            transform: translateY(0);
-        }
-        to {
-            transform: translateY(-30px);
-        }
+@keyframes highway {
+    0% {
+        transform: translateX(0); /* Start at the left edge */
     }
+    100% {
+        transform: translateX(-50%); /* Move to the left, covering 100% width */
+    }
+}
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+@keyframes swim {
+    from {
+        transform: translateY(0);
     }
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 }
