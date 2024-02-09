@@ -23,6 +23,113 @@ header {
    
 }
 
+.highway {
+    height: 100px; /* Adjust the height as needed */
+    width: 1000%; /* Set a large value or use a percentage for an "infinite" width */
+    display: block;
+    background-image: url(images/road.jpg);
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite; /* Keyframe animation for highway movement */
+}
+
+@keyframes highway {
+    0% {
+        transform: translateX(0); /* Start at the left edge */
+    }
+    100% {
+        transform: translateX(-50%); /* Move to the left, covering 100% width */
+    }
+}
+
+@keyframes swim {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.city {
+    height: 250px; /* Fix typo '250ox' to '250px' */
+    width: 500%;
+    background-image: url(images/city.png);
+    position: absolute;
+    bottom: 146px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 20s linear infinite; /* Fix animation property */
+}
+
+@keyframes city {
+    100% {
+        transform: translateX(-1400px); /* Fix typo 'PX' to 'px' */
+    }
+}
+
+
+.car{
+    width: 400px;
+    left: 20%;
+    bottom: 10px;
+    transform: translateX();
+    position: absolute;
+    z-index: 2;
+
+}
+.car img{
+    width: 100%;
+}
+.wheel {
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel img {
+    width: 72px;
+    animation: wheel 2s linear infinite;;
+}
+
+.back-wheel {
+    left: -125px;
+    position: absolute;
+    bottom: 15px; /* Adjust the bottom position for the back wheel */
+}
+
+.Front-wheel {
+    left: -372px; /* Adjust the position based on the actual width of the front wheel */
+    position: absolute;
+    bottom: 15px; /* Adjust the bottom position for the front wheel */
+}
+@keyframes wheel {
+    100% {
+        transform: rotate(360deg);
+    } 
+
+}
+
+
+
 
 .container {
     display: flex;
@@ -83,7 +190,7 @@ nav ul li a:hover::after{
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 30px;
     opacity: 0;
     animation: swim 2s ease-in-out infinite alternate, fadeIn 1.5s ease-out forwards;
@@ -118,6 +225,8 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     color: #ababab;
+    margin-top: 70px;
+   
 }
 .row{
     display: flex;
@@ -453,6 +562,11 @@ nav .fas{
     }
 
 
+    #about{
+    margin-top: 5px;
+   
+}
+
 .highway {
     height: 100px; /* Adjust the height as needed */
     width: 1000%; /* Set a large value or use a percentage for an "infinite" width */
@@ -537,19 +651,169 @@ nav .fas{
 
 .wheel img {
     width: 72px;
+    animation: wheel 2s linear infinite;;
 }
 
 .back-wheel {
-    left: 100px;
+    left: 96px;
     position: absolute;
     bottom: 20px; /* Adjust the bottom position for the back wheel */
 }
 
 .Front-wheel {
-    left: -140px; /* Adjust the position based on the actual width of the front wheel */
+    left: -149px; /* Adjust the position based on the actual width of the front wheel */
     position: absolute;
-    bottom: 20px; /* Adjust the bottom position for the front wheel */
+    bottom: 21px; /* Adjust the bottom position for the front wheel */
 }
+@keyframes wheel {
+    100% {
+        transform: rotate(360deg);
+    } 
+
+}
+
+
+#portfolio {
+    background-color: #080808;
+    padding: 20px 0; /* Adjusted padding for smaller screens */
+}
+
+.sub-title {
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
+    color: #fff;
+    margin-bottom: 40px; /* Adjusted margin for smaller screens */
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    font-size: 12px; /* Adjusted font size for smaller screens */
+    color: #fff;
+    padding: 10px; /* Adjusted padding for smaller screens */
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 5px; /* Adjusted margin for smaller screens */
+}
+
+.layer p {
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
+}
+
+.layer a {
+    font-size: 14px; /* Adjusted font size for smaller screens */
+    line-height: 40px; /* Adjusted line height for smaller screens */
+    width: 40px; /* Adjusted width for smaller screens */
+    height: 40px; /* Adjusted height for smaller screens */
+    border-radius: 50%;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 50px;
+}
+
+.work {
+    flex: 1 0 200px; /* Allow items to grow, but not shrink below 200px */
+    max-width: 200px; /* Set a maximum width for each work item */
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #262626;
+    margin-bottom: 30px; /* Adjusted margin for smaller screens */
+}
+
+.work img {
+    width: 100%;
+    max-height: 100%; /* Adjusted maximum height for the image */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.work:hover {
+    transform: scale(1.05);
+}
+
+.work img:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    display: block;
+    margin: 20px auto; /* Adjusted margin for smaller screens */
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 10px 20px; /* Adjusted padding for smaller screens */
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+
+#services {
+    background-color: #080808;
+    padding: 20px 0; /* Adjusted padding for smaller screens */
+}
+
+.sub-title {
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
+    color: #fff;
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px; /* Adjusted grid gap for smaller screens */
+    margin-top: 20px; /* Adjusted margin for smaller screens */
+}
+
+.services-list div {
+    background: #262626;
+    padding: 20px; /* Adjusted padding for smaller screens */
+    font-size: 12px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.services-list div i {
+    font-size: 30px; /* Adjusted font size for smaller screens */
+    margin-bottom: 15px; /* Adjusted margin for smaller screens */
+}
+
+.services-list div h2 {
+    font-size: 20px; /* Adjusted font size for smaller screens */
+    font-weight: 500;
+    margin-bottom: 10px; /* Adjusted margin for smaller screens */
+}
+
+.services-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 10px; /* Adjusted font size for smaller screens */
+    margin-top: 10px; /* Adjusted margin for smaller screens */
+    display: inline-block;
+}
+
+.services-list div:hover {
+    background: #ff004f;
+    transform: translate(-5px); /* Adjusted translation for smaller screens */
+}
+
+
+
 
 
 }
