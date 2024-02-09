@@ -527,6 +527,29 @@ nav .fas{
 .car img{
     width: 100%;
 }
+.wheel {
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.wheel img {
+    width: 72px;
+}
+
+.back-wheel {
+    left: 100px;
+    position: absolute;
+    bottom: 20px; /* Adjust the bottom position for the back wheel */
+}
+
+.Front-wheel {
+    left: -140px; /* Adjust the position based on the actual width of the front wheel */
+    position: absolute;
+    bottom: 20px; /* Adjust the bottom position for the front wheel */
+}
 
 
 }
