@@ -11,6 +11,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #080808;
     color: #fff;
+    overflow-x: hidden;
     
 }
 
@@ -24,12 +25,12 @@ header {
 }
 
 .highway {
-    height: 100px; /* Adjust the height as needed */
+    height: 150px; /* Adjust the height as needed */
     width: 1000%; /* Set a large value or use a percentage for an "infinite" width */
     display: block;
     background-image: url(images/road.jpg);
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     left: 0;
     right: 0;
     z-index: 1;
@@ -540,11 +541,32 @@ textarea {
 
 }
 
-nav .fas{
-    display: none;
-}
 @media only screen and (max-width: 768px) {
+     nav ul {
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 350px;
+        width: 300px;
+        height: 300px; /* Increased height */
+        background-color: #ff3366; /* Adjusted background color */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+     
+
+    /* Change ul li to nav ul li */
+    nav ul li {
+        margin: 10px;
+        text-align: center;
+    }
+
    
+    nav .fas {
+        display: block;
+    }
 
     header {
         background-image: url(images/sky2.jpg);
@@ -655,15 +677,15 @@ nav .fas{
 }
 
 .back-wheel {
-    left: 96px;
+    left: 92px;
     position: absolute;
-    bottom: 20px; /* Adjust the bottom position for the back wheel */
+    bottom: 10px; /* Adjust the bottom position for the back wheel */
 }
 
 .Front-wheel {
-    left: -149px; /* Adjust the position based on the actual width of the front wheel */
+    left: -154px; /* Adjust the position based on the actual width of the front wheel */
     position: absolute;
-    bottom: 21px; /* Adjust the bottom position for the front wheel */
+    bottom: 10px; /* Adjust the bottom position for the front wheel */
 }
 @keyframes wheel {
     100% {
@@ -811,9 +833,6 @@ nav .fas{
     background: #ff004f;
     transform: translate(-5px); /* Adjusted translation for smaller screens */
 }
-
-
-
 
 
 }
