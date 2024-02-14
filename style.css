@@ -548,7 +548,7 @@ textarea {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 0;
         left: 350px;
         width: 300px;
         height: 300px; /* Increased height */
@@ -566,6 +566,14 @@ textarea {
    
     nav .fas {
         display: block;
+    }
+
+    nav ul .fas{
+         position: absolute;
+         top: 25px;
+         left: 25px;
+         cursor: pointer;
+
     }
 
     header {
