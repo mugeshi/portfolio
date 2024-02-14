@@ -18,3 +18,21 @@ function opentab(tabname) {
     // Add "active-tab" class to the corresponding tab content
     document.getElementById(tabname).classList.add("active-tab");
 }
+
+
+           /* ------sidemenu-----*/
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+    sidemenu.style.display = "block";
+}
+
+function closemenu() {
+    sidemenu.style.display = "none";
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    sidemenu.style.display = "none";
+});
+
+
