@@ -36,3 +36,16 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+function emailSend(){
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "nicolemugeshi@gmail.com",
+    Password : "61B31FDBD7199594FC7E5F7C172E8327F395",
+    To : 'nicolemugeshi@gmail.com',
+    From : "nicolemugeshi@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+}
