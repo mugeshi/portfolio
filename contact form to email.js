@@ -4,11 +4,6 @@ function emailSend(){
     var email = document.getElementById('email').value;
     var message = document.getElementById('message').value;
 
-    var messageBody = "Name" + userName + 
-    "<br/> phone " + phone +
-    "<br/>  Email"  + email;
-
-
 
     Email.send({
     Host : "smtp.elasticemail.com",
@@ -17,7 +12,7 @@ function emailSend(){
     To : "nicolemugeshi@gmail.com",
     From : "millycyrus@gmail.com",
     Subject : "This is the subject",
-    Body : "And this is the body"
+    Body : message
 }).then(
   message => alert(message)
 );
