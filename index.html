@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/b5bf877f7a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav>
@@ -22,219 +24,258 @@
 
                     <i class="fas fa-circle fa-circle-xmark" onClick="closemenu()"></i>
                 </ul>
-             
-                <i class="fas fa-bars fa-bars"  onClick="openmenu()"></i>
+
+                <i class="fas fa-bars fa-bars" onClick="openmenu()"></i>
             </div>
         </nav>
         <div class="header-text">
             <p>Passionate Creator</p>
-            <h1>Explore the World of <span>Nicole</span> <br> Crafted with Innovation</h1>
+            <h1>
+                Explore the World of <span>Nicole</span> <br />
+                Crafted with Innovation
+            </h1>
         </div>
         <div class="hero">
             <div class="highway"></div>
             <div class="city"></div>
             <div class="car">
-                <img src="images/car.png">
+                <img src="images/car.png" />
             </div>
-             <div class="wheel">
-                <img src=images/wheel.png  class="back-wheel">
-                <img src=images/wheel.png  class="Front-wheel">
+            <div class="wheel">
+                <img src=images/wheel.png class="back-wheel"> <img src=images/wheel.png class="Front-wheel">
             </div>
-
         </div>
     </header>
-    
 
-<br>
+    <br />
 
     <!-----------------------About--------------------->
     <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/image22.jpeg" alt="About Image">
+                    <img src="images/image22.jpeg" alt="About Image" />
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>Hey there! 👋 I'm Nicole, a passionate software engineer based in Nairobi. My journey in the tech world is driven by a deep curiosity and love for problem-solving.
+                    <p>
+                        Hey there! 👋 I'm Nicole, a passionate software engineer based in
+                        Nairobi. My journey in the tech world is driven by a deep
+                        curiosity and love for problem-solving. I thrive on turning
+                        complex ideas into clean, efficient code. Whether it's crafting
+                        intuitive user interfaces or optimizing algorithms, I'm all about
+                        creating solutions that make a meaningful impact. Beyond the
+                        screen, you'll find me exploring the latest tech trends, sipping
+                        on coffee, and occasionally lost in the world of open-source
+                        projects. Let's connect and build something awesome together! 💻✨
+                    </p>
 
-I thrive on turning complex ideas into clean, efficient code. Whether it's crafting intuitive user interfaces or optimizing algorithms, I'm all about creating solutions that make a meaningful impact.
-
-Beyond the screen, you'll find me exploring the latest tech trends, sipping on coffee, and occasionally lost in the world of open-source projects. Let's connect and build something awesome together! 💻✨</p>
-
-        <div class="tab-titles">
-            <p class="tab-links active-link" onclick="opentab('skills')" >skills</p>
-            <p class="tab-links"  onclick="opentab('education')">Education</p>
-
-             
-        </div>
-        <div class="tab-contents active-tab" id="skills">
-            <ul>
-              <li>python</li>  
-              <li>javascript</li>
-              <li><span>web development</span><br>React, Flask, Next js</li>
-              <li><span>Database Managemnt</span><br> MySQL, postgreSQL</li>
-              <li><span>Front-End Technologies</span><br>HTML, CSS</li>
-              <li><span>Other skills</span><br>Git: RESTx, RESTful, API</li>
-
-            </ul>
-        </div>
-        <div class="tab-contents"  id="education">
-        <ul>
-            <li><span>November 2023</span><br>Software Engineer at Moringa school</li>
-            <li><span>November 2022</span><br>Tourism Management at Cooperative university of kenya </li>
-            <li><span>March 2023</span><br>Certification Business Marketing and social Media at Hp Life</li>
-            <li><span>November 2022</span><br>Fundamental of Digital Marketing at Google Digital School For Africa</li>
-
-        </ul>
-        </div>
-               </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>python</li>
+                            <li>javascript</li>
+                            <li><span>web development</span><br />React, Flask, Next js</li>
+                            <li>
+                                <span>Database Managemnt</span><br />
+                                MySQL, postgreSQL
+                            </li>
+                            <li><span>Front-End Technologies</span><br />HTML, CSS</li>
+                            <li><span>Other skills</span><br />Git: RESTx, RESTful, API</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>November 2023</span><br />Software Engineer at Moringa
+                                school
+                            </li>
+                            <li>
+                                <span>November 2022</span><br />Tourism Management at
+                                Cooperative university of kenya
+                            </li>
+                            <li>
+                                <span>March 2023</span><br />Certification Business Marketing
+                                and social Media at Hp Life
+                            </li>
+                            <li>
+                                <span>November 2022</span><br />Fundamental of Digital
+                                Marketing at Google Digital School For Africa
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-
-
 
     <!-------------------------Services--------------------->
-            <div id="services">
-                    <div class="container1">
-                    <h1 class="sub-title">My Services</h1>
-                    <div class="services-list">
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>Web Design</h2>
-                <p>
-                As a passionate web designer, I specialize in creating visually appealing and user-friendly interfaces. Using tools like Figma and wireframes, I bring concepts to life, ensuring a seamless and engaging user experience.
-                <br><br>
-                <strong>Skills:</strong> HTML, CSS, Figma, Wireframing
-                <br>
-                <a href="#" class="Learn-more">Learn More</a>
-                </p>
-        </div>
+    <div id="services">
+        <div class="container1">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        As a passionate web designer, I specialize in creating visually
+                        appealing and user-friendly interfaces. Using tools like Figma and
+                        wireframes, I bring concepts to life, ensuring a seamless and
+                        engaging user experience.
+                        <br /><br />
+                        <strong>Skills:</strong> HTML, CSS, Figma, Wireframing
+                        <br />
+                        <a href="#" class="Learn-more">Learn More</a>
+                    </p>
+                </div>
 
-        <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Front-End Development</h2>
-            <p>
-            Dive into the world of front-end development with me. I specialize in crafting interactive and responsive user interfaces using cutting-edge technologies like React, HTML, and CSS. Let's create visually stunning and engaging web applications together.
-            <br><br>
-            <strong>Skills:</strong> HTML, CSS, JavaScript, React
-            <br>
-            <a href="#" class="Learn-more">Learn More</a>
-            </p>
-        </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p>
+                        Dive into the world of front-end development with me. I specialize
+                        in crafting interactive and responsive user interfaces using
+                        cutting-edge technologies like React, HTML, and CSS. Let's create
+                        visually stunning and engaging web applications together.
+                        <br /><br />
+                        <strong>Skills:</strong> HTML, CSS, JavaScript, React
+                        <br />
+                        <a href="#" class="Learn-more">Learn More</a>
+                    </p>
+                </div>
 
-        <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Back-End Development</h2>
-            <p>
-            Unlock the power of server-side development! With expertise in Python, Flask, and Next.js, I build robust and scalable back-end systems that drive the functionality of web applications. Let's bring your project to life with a reliable and efficient back-end infrastructure.
-            <br><br>
-            <strong>Skills:</strong> Python, Flask, Next.js
-            <br>
-            <a href="#" class="Learn-more">Learn More</a>
-            </p>
-        </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Back-End Development</h2>
+                    <p>
+                        Unlock the power of server-side development! With expertise in
+                        Python, Flask, and Next.js, I build robust and scalable back-end
+                        systems that drive the functionality of web applications. Let's
+                        bring your project to life with a reliable and efficient back-end
+                        infrastructure.
+                        <br /><br />
+                        <strong>Skills:</strong> Python, Flask, Next.js
+                        <br />
+                        <a href="#" class="Learn-more">Learn More</a>
+                    </p>
+                </div>
 
-        <div>
-            <i class="fa-solid fa-crop"></i>
-            <h2>Database Management</h2>
-            <p>
-            Delve into the world of databases! I specialize in managing databases using MySQL and PostgreSQL, ensuring efficient data storage and retrieval. Let's build a solid foundation for your applications with robust database management.
-            <br><br>
-            <strong>Skills:</strong> MySQL, PostgreSQL
-            <br>
-            <a href="#" class="Learn-more">Learn More</a>
-            </p>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Database Management</h2>
+                    <p>
+                        Delve into the world of databases! I specialize in managing
+                        databases using MySQL and PostgreSQL, ensuring efficient data
+                        storage and retrieval. Let's build a solid foundation for your
+                        applications with robust database management.
+                        <br /><br />
+                        <strong>Skills:</strong> MySQL, PostgreSQL
+                        <br />
+                        <a href="#" class="Learn-more">Learn More</a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-        
-</div>
+
+    <!---------------------------Portfolio------------>
+    <div id="portfolio">
+        <div class="container2">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/swiftproject.jpeg" alt="Swift Project" />
+                    <div class="layer">
+                        <h3>MarketPlace App</h3>
+                        <p>
+                            It is a platform that facilitates the buying and selling of
+                            goods and services between multiple users
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/netflix.jpeg" alt="Netflix" />
+                    <div class="layer">
+                        <h3>Netflix App</h3>
+                        <p>
+                            It is a platform that facilitates the buying and selling of
+                            goods and services between multiple users
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/TourTrave.jpeg" alt="Tour Travel" />
+                    <div class="layer">
+                        <h3>MarketPlace App</h3>
+                        <p>
+                            It is a platform that facilitates the buying and selling of
+                            goods and services between multiple users
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/BlueCart1.jpeg" alt="Blue Cart 1" />
+                    <div class="layer">
+                        <h3>MarketPlace App</h3>
+                        <p>
+                            It is a platform that facilitates the buying and selling of
+                            goods and services between multiple users
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
         </div>
-
-
-
-<!---------------------------Portfolio------------>
-        <div id="portfolio">
-    <div class="container2">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/swiftproject.jpeg" alt="Swift Project">
-                <div class="layer">
-                    <h3>MarketPlace App</h3>
-                    <p>It is a platform that facilitates the buying and selling of goods and services between multiple users</p>
-                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
-                </div>
-            </div>
-
-            <div class="work">
-                <img src="images/netflix.jpeg" alt="Netflix">
-                <div class="layer">
-                    <h3>Netflix App</h3>
-                    <p>It is a platform that facilitates the buying and selling of goods and services between multiple users</p>
-                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
-                </div>
-            </div>
-
-            <div class="work">
-                <img src="images/TourTrave.jpeg" alt="Tour Travel">
-                <div class="layer">
-                    <h3>MarketPlace App</h3>
-                    <p>It is a platform that facilitates the buying and selling of goods and services between multiple users</p>
-                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
-                </div>
-            </div>
-
-            <div class="work">
-                <img src="images/BlueCart1.jpeg" alt="Blue Cart 1">
-                <div class="layer">
-                    <h3>MarketPlace App</h3>
-                    <p>It is a platform that facilitates the buying and selling of goods and services between multiple users</p>
-                    <a href="#"><i class="fa-solid fa-link-slash"></i></a>
-                </div>
-            </div>
-        </div>
-           <a href="#" class="btn">See More</a>
     </div>
-</div>
 
+    <!----------------------------------Contact------------------->
 
-<!----------------------------------Contact------------------->
-
-<div id="Contact">
-    <div class="container">
-        <div class="row">
-            <div class="contact-left">
-                <h1 class="sub-title">Contact Me</h1>
-                <p><i class="fa-solid fa-envelope"></i>nicolemugeshi@gmail.com</p>
-                <p><i class="fa-solid fa-phone-alt"></i>0113072550</p>
-                <div class="social-icon">
-                    <a href="https://www.linkedin.com/in/nicole-mugeshi-a6589425b/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/mugeshi"><i class="fa-brands fa-github"></i></a>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>nicolemugeshi@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-alt"></i>0113072550</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/nicole-mugeshi-a6589425b/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/mugeshi"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/CV Resume (2).pdf" download class="btn btn2">Download Cv</a>
                 </div>
-                <a href="images/CV Resume (2).pdf" download class="btn btn2">Download Cv</a>
+                <div class="contact-right">
+                    <form id="contactForm">
+                        <input id="name" type="text" name="Name" placeholder="Your Name" required />
+                        <input id="email" type="email" name="email" placeholder="Your Email" required />
+                        <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button id="submitbtn" type="submit" class="btn btn2">
+                            Submit
+                        </button>
+                    </form>
+                </div>
             </div>
-            <div class="contact-right">
-                <form onsubmit="emailSend(); reset(); return false">
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit" class="btn btn2">Submit</button>
-                </form>
-            </div> 
-
         </div>
-        
-    </div>
-    <div class="copyright">
+        <div class="copyright">
             <p>copyright @ Nicole. Made with <i class="fa-solid fa-heart"></i></p>
         </div>
-</div>
-     <script src="https://smtpjs.com/v3/smtp.js">
-</script> 
-   <script src="contact form to email.js"></script>
-   
+    </div>
+    <script defer src="https://smtpjs.com/v3/smtp.js"></script>
+    <script defer src="contact form to email.js"></script>
+
+ 
 </body>
+
 </html>
